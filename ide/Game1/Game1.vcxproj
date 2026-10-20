@@ -186,6 +186,7 @@
     <ClInclude Include="$(SolutionDir)..\src\Game1\PlayerScene.h" />
     <ClInclude Include="$(SolutionDir)..\src\Game1\Point.h" />
     <ClInclude Include="$(SolutionDir)..\src\Game1\StaticObject.h" />
+    <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(SolutionDir)..\src\Game1\Game1Scene.cpp" />
@@ -200,6 +201,7 @@
     <ClCompile Include="$(SolutionDir)..\src\Game1\StaticObject.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ResourceCompile Include="Resource.rc" />
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
