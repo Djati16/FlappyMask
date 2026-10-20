@@ -1,211 +1,209 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <ItemGroup Label="ProjectConfigurations">
-    <ProjectConfiguration Include="Debug|Win32">
-      <Configuration>Debug</Configuration>
-      <Platform>Win32</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Release|Win32">
-      <Configuration>Release</Configuration>
-      <Platform>Win32</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Debug|x64">
-      <Configuration>Debug</Configuration>
-      <Platform>x64</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Release|x64">
-      <Configuration>Release</Configuration>
-      <Platform>x64</Platform>
-    </ProjectConfiguration>
-  </ItemGroup>
-  <PropertyGroup Label="Globals">
-    <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{009E03E4-4FE4-1D9B-45C1-661D14900CD1}</ProjectGuid>
-    <RootNamespace>MonProjet1</RootNamespace>
-  </PropertyGroup>
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
-    <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
-    <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
-    <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
-    <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
-  </PropertyGroup>
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
-  <ImportGroup Label="ExtensionSettings">
-  </ImportGroup>
-  <ImportGroup Label="Shared">
-  </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
-  <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(ProjectDir)$(Platform)\$(Configuration)\intermediate\</IntDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(ProjectDir)$(Platform)\$(Configuration)\intermediate\</IntDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(ProjectDir)$(Platform)\$(Configuration)\intermediate\</IntDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(ProjectDir)$(Platform)\$(Configuration)\intermediate\</IntDir>
-  </PropertyGroup>
-  <PropertyGroup Label="Vcpkg">
-    <VcpkgEnabled>false</VcpkgEnabled>
-    <VcpkgEnableManifest>false</VcpkgEnableManifest>
-    <VcpkgManifestRoot>$(SolutionDir)..\config\Game1</VcpkgManifestRoot>
-    <VcpkgInstalledDir>$(SolutionDir)\vcpkg_installed\$(VcpkgTriplet)</VcpkgInstalledDir>
-  </PropertyGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp20</LanguageStandard>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\src;$(SolutionDir)..\src\Game1;..\..\res\SDL\SDL2\SDL2\include;..\..\res\SDL\SDL2_image\SDL2_image\include;..\..\res\SDL\SDL2_mixer\SDL2_mixer\include;..\..\res\SDL\SDL2_ttf\include;$(SolutionDir)..\src\MyMotor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ClCompile>
-    <Link>
-      <SubSystem>Windows</SubSystem>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\..\res\SDL\SDL2\SDL2\lib\x64;..\..\res\SDL\SDL2_image\SDL2_image\lib\x64;..\..\res\SDL\SDL2_mixer\SDL2_mixer\lib\x64;..\..\res\SDL\SDL2_ttf\lib\x64;$(SolutionDir)MyMotor\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SDL2main.lib;SDL2_image.lib;SDL2.lib;SDL2_mixer.lib;SDL2_ttf.lib;MyMotor.lib;%(AdditionalDependencies)</AdditionalDependencies>
-    </Link>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp20</LanguageStandard>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\src;$(SolutionDir)..\src\Game1;..\..\res\SDL\SDL2\SDL2\include;..\..\res\SDL\SDL2_image\SDL2_image\include;..\..\res\SDL\SDL2_mixer\SDL2_mixer\include;..\..\res\SDL\SDL2_ttf\include;$(SolutionDir)..\src\MyMotor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ClCompile>
-    <Link>
-      <SubSystem>Windows</SubSystem>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <OptimizeReferences>true</OptimizeReferences>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\..\res\SDL\SDL2\SDL2\lib\x64;..\..\res\SDL\SDL2_image\SDL2_image\lib\x64;..\..\res\SDL\SDL2_mixer\SDL2_mixer\lib\x64;..\..\res\SDL\SDL2_ttf\lib\x64;$(SolutionDir)MyMotor\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SDL2main.lib;SDL2_image.lib;SDL2.lib;SDL2_mixer.lib;SDL2_ttf.lib;MyMotor.lib;%(AdditionalDependencies)</AdditionalDependencies>
-    </Link>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp20</LanguageStandard>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\src;$(SolutionDir)..\src\Game1;..\..\res\SDL\SDL2\SDL2\include;..\..\res\SDL\SDL2_image\SDL2_image\include;..\..\res\SDL\SDL2_mixer\SDL2_mixer\include;..\..\res\SDL\SDL2_ttf\include;$(SolutionDir)..\src\MyMotor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ClCompile>
-    <Link>
-      <SubSystem>Windows</SubSystem>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\..\res\SDL\SDL2\SDL2\lib\x64;..\..\res\SDL\SDL2_image\SDL2_image\lib\x64;..\..\res\SDL\SDL2_mixer\SDL2_mixer\lib\x64;..\..\res\SDL\SDL2_ttf\lib\x64;$(SolutionDir)MyMotor\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SDL2main.lib;SDL2_image.lib;SDL2.lib;SDL2_mixer.lib;SDL2_ttf.lib;MyMotor.lib;%(AdditionalDependencies)</AdditionalDependencies>
-    </Link>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp20</LanguageStandard>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\src;$(SolutionDir)..\src\Game1;..\..\res\SDL\SDL2\SDL2\include;..\..\res\SDL\SDL2_image\SDL2_image\include;..\..\res\SDL\SDL2_mixer\SDL2_mixer\include;..\..\res\SDL\SDL2_ttf\include;$(SolutionDir)..\src\MyMotor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ClCompile>
-    <Link>
-      <SubSystem>Windows</SubSystem>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <OptimizeReferences>true</OptimizeReferences>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\..\res\SDL\SDL2\SDL2\lib\x64;..\..\res\SDL\SDL2_image\SDL2_image\lib\x64;..\..\res\SDL\SDL2_mixer\SDL2_mixer\lib\x64;..\..\res\SDL\SDL2_ttf\lib\x64;$(SolutionDir)MyMotor\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SDL2main.lib;SDL2_image.lib;SDL2.lib;SDL2_mixer.lib;SDL2_ttf.lib;MyMotor.lib;%(AdditionalDependencies)</AdditionalDependencies>
-    </Link>
-  </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="$(SolutionDir)..\src\Game1\Game1Scene.h" />
-    <ClInclude Include="$(SolutionDir)..\src\Game1\GameOverScene.h" />
-    <ClInclude Include="$(SolutionDir)..\src\Game1\Ground.h" />
-    <ClInclude Include="$(SolutionDir)..\src\Game1\LevelManager.h" />
-    <ClInclude Include="$(SolutionDir)..\src\Game1\main.h" />
-    <ClInclude Include="$(SolutionDir)..\src\Game1\Obstacle.h" />
-    <ClInclude Include="$(SolutionDir)..\src\Game1\Player.h" />
-    <ClInclude Include="$(SolutionDir)..\src\Game1\PlayerScene.h" />
-    <ClInclude Include="$(SolutionDir)..\src\Game1\Point.h" />
-    <ClInclude Include="$(SolutionDir)..\src\Game1\StaticObject.h" />
-    <ClInclude Include="resource.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="$(SolutionDir)..\src\Game1\Game1Scene.cpp" />
-    <ClCompile Include="$(SolutionDir)..\src\Game1\GameOverScene.cpp" />
-    <ClCompile Include="$(SolutionDir)..\src\Game1\Ground.cpp" />
-    <ClCompile Include="$(SolutionDir)..\src\Game1\LevelManager.cpp" />
-    <ClCompile Include="$(SolutionDir)..\src\Game1\main.cpp" />
-    <ClCompile Include="$(SolutionDir)..\src\Game1\Obstacle.cpp" />
-    <ClCompile Include="$(SolutionDir)..\src\Game1\Player.cpp" />
-    <ClCompile Include="$(SolutionDir)..\src\Game1\PlayerScene.cpp" />
-    <ClCompile Include="$(SolutionDir)..\src\Game1\Point.cpp" />
-    <ClCompile Include="$(SolutionDir)..\src\Game1\StaticObject.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="Resource.rc" />
-  </ItemGroup>
-  <ItemGroup>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="$(SolutionDir)\MyMotor\MyMotor.vcxproj">
-      <Project>{7FBC32DC-00F0-47CA-69A7-43BC4DA921CF}</Project>
-    </ProjectReference>
-  </ItemGroup>
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
-  <ImportGroup Label="ExtensionTargets">
-  </ImportGroup>
+    <ItemGroup Label="ProjectConfigurations">
+        <ProjectConfiguration Include="Debug|Win32">
+            <Configuration>Debug</Configuration>
+            <Platform>Win32</Platform>
+        </ProjectConfiguration>
+        <ProjectConfiguration Include="Release|Win32">
+            <Configuration>Release</Configuration>
+            <Platform>Win32</Platform>
+        </ProjectConfiguration>
+        <ProjectConfiguration Include="Debug|x64">
+            <Configuration>Debug</Configuration>
+            <Platform>x64</Platform>
+        </ProjectConfiguration>
+        <ProjectConfiguration Include="Release|x64">
+            <Configuration>Release</Configuration>
+            <Platform>x64</Platform>
+        </ProjectConfiguration>
+    </ItemGroup>
+    <PropertyGroup Label="Globals">
+        <Keyword>Win32Proj</Keyword>
+        <ProjectGuid>{009E03E4-4FE4-1D9B-45C1-661D14900CD1}</ProjectGuid>
+        <RootNamespace>MonProjet1</RootNamespace>
+    </PropertyGroup>
+    <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+        <ConfigurationType>Application</ConfigurationType>
+        <UseDebugLibraries>true</UseDebugLibraries>
+        <PlatformToolset>v143</PlatformToolset>
+        <CharacterSet>Unicode</CharacterSet>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+        <ConfigurationType>Application</ConfigurationType>
+        <UseDebugLibraries>false</UseDebugLibraries>
+        <PlatformToolset>v143</PlatformToolset>
+        <WholeProgramOptimization>true</WholeProgramOptimization>
+        <CharacterSet>Unicode</CharacterSet>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+        <ConfigurationType>Application</ConfigurationType>
+        <UseDebugLibraries>true</UseDebugLibraries>
+        <PlatformToolset>v143</PlatformToolset>
+        <CharacterSet>Unicode</CharacterSet>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+        <ConfigurationType>Application</ConfigurationType>
+        <UseDebugLibraries>false</UseDebugLibraries>
+        <PlatformToolset>v143</PlatformToolset>
+        <WholeProgramOptimization>true</WholeProgramOptimization>
+        <CharacterSet>Unicode</CharacterSet>
+    </PropertyGroup>
+    <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+    <ImportGroup Label="ExtensionSettings">
+    </ImportGroup>
+    <ImportGroup Label="Shared">
+    </ImportGroup>
+    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+        <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    </ImportGroup>
+    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+        <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    </ImportGroup>
+    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+        <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    </ImportGroup>
+    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+        <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    </ImportGroup>
+    <PropertyGroup Label="UserMacros" />
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+        <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+        <IntDir>$(ProjectDir)$(Platform)\$(Configuration)\intermediate\</IntDir>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+        <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+        <IntDir>$(ProjectDir)$(Platform)\$(Configuration)\intermediate\</IntDir>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+        <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+        <IntDir>$(ProjectDir)$(Platform)\$(Configuration)\intermediate\</IntDir>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+        <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+        <IntDir>$(ProjectDir)$(Platform)\$(Configuration)\intermediate\</IntDir>
+    </PropertyGroup>
+    <PropertyGroup Label="Vcpkg">
+        <VcpkgEnabled>false</VcpkgEnabled>
+        <VcpkgEnableManifest>false</VcpkgEnableManifest>
+        <VcpkgManifestRoot>$(SolutionDir)..\config\Game1</VcpkgManifestRoot>
+        <VcpkgInstalledDir>$(SolutionDir)\vcpkg_installed\$(VcpkgTriplet)</VcpkgInstalledDir>
+    </PropertyGroup>
+    <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+        <ClCompile>
+            <WarningLevel>Level3</WarningLevel>
+            <SDLCheck>true</SDLCheck>
+            <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+            <ConformanceMode>true</ConformanceMode>
+            <LanguageStandard>stdcpp20</LanguageStandard>
+            <PrecompiledHeader>NotUsing</PrecompiledHeader>
+            <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+            <AdditionalIncludeDirectories>$(SolutionDir)..\src;$(SolutionDir)..\src\Game1;..\..\res\SDL\SDL2\SDL2\include;..\..\res\SDL\SDL2_image\SDL2_image\include;..\..\res\SDL\SDL2_mixer\SDL2_mixer\include;..\..\res\SDL\SDL2_ttf\include;$(SolutionDir)..\src\MyMotor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+        </ClCompile>
+        <Link>
+            <SubSystem>Windows</SubSystem>
+            <GenerateDebugInformation>true</GenerateDebugInformation>
+            <AdditionalLibraryDirectories>..\..\res\SDL\SDL2\SDL2\lib\x64;..\..\res\SDL\SDL2_image\SDL2_image\lib\x64;..\..\res\SDL\SDL2_mixer\SDL2_mixer\lib\x64;..\..\res\SDL\SDL2_ttf\lib\x64;$(SolutionDir)MyMotor\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+            <AdditionalDependencies>SDL2main.lib;SDL2_image.lib;SDL2.lib;SDL2_mixer.lib;SDL2_ttf.lib;MyMotor.lib;%(AdditionalDependencies)</AdditionalDependencies>
+        </Link>
+    </ItemDefinitionGroup>
+    <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+        <ClCompile>
+            <WarningLevel>Level3</WarningLevel>
+            <FunctionLevelLinking>true</FunctionLevelLinking>
+            <IntrinsicFunctions>true</IntrinsicFunctions>
+            <SDLCheck>true</SDLCheck>
+            <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+            <ConformanceMode>true</ConformanceMode>
+            <LanguageStandard>stdcpp20</LanguageStandard>
+            <PrecompiledHeader>NotUsing</PrecompiledHeader>
+            <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+            <AdditionalIncludeDirectories>$(SolutionDir)..\src;$(SolutionDir)..\src\Game1;..\..\res\SDL\SDL2\SDL2\include;..\..\res\SDL\SDL2_image\SDL2_image\include;..\..\res\SDL\SDL2_mixer\SDL2_mixer\include;..\..\res\SDL\SDL2_ttf\include;$(SolutionDir)..\src\MyMotor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+        </ClCompile>
+        <Link>
+            <SubSystem>Windows</SubSystem>
+            <EnableCOMDATFolding>true</EnableCOMDATFolding>
+            <OptimizeReferences>true</OptimizeReferences>
+            <GenerateDebugInformation>true</GenerateDebugInformation>
+            <AdditionalLibraryDirectories>..\..\res\SDL\SDL2\SDL2\lib\x64;..\..\res\SDL\SDL2_image\SDL2_image\lib\x64;..\..\res\SDL\SDL2_mixer\SDL2_mixer\lib\x64;..\..\res\SDL\SDL2_ttf\lib\x64;$(SolutionDir)MyMotor\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+            <AdditionalDependencies>SDL2main.lib;SDL2_image.lib;SDL2.lib;SDL2_mixer.lib;SDL2_ttf.lib;MyMotor.lib;%(AdditionalDependencies)</AdditionalDependencies>
+        </Link>
+    </ItemDefinitionGroup>
+    <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+        <ClCompile>
+            <WarningLevel>Level3</WarningLevel>
+            <SDLCheck>true</SDLCheck>
+            <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+            <ConformanceMode>true</ConformanceMode>
+            <LanguageStandard>stdcpp20</LanguageStandard>
+            <PrecompiledHeader>NotUsing</PrecompiledHeader>
+            <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+            <AdditionalIncludeDirectories>$(SolutionDir)..\src;$(SolutionDir)..\src\Game1;..\..\res\SDL\SDL2\SDL2\include;..\..\res\SDL\SDL2_image\SDL2_image\include;..\..\res\SDL\SDL2_mixer\SDL2_mixer\include;..\..\res\SDL\SDL2_ttf\include;$(SolutionDir)..\src\MyMotor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+        </ClCompile>
+        <Link>
+            <SubSystem>Windows</SubSystem>
+            <GenerateDebugInformation>true</GenerateDebugInformation>
+            <AdditionalLibraryDirectories>..\..\res\SDL\SDL2\SDL2\lib\x64;..\..\res\SDL\SDL2_image\SDL2_image\lib\x64;..\..\res\SDL\SDL2_mixer\SDL2_mixer\lib\x64;..\..\res\SDL\SDL2_ttf\lib\x64;$(SolutionDir)MyMotor\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+            <AdditionalDependencies>SDL2main.lib;SDL2_image.lib;SDL2.lib;SDL2_mixer.lib;SDL2_ttf.lib;MyMotor.lib;%(AdditionalDependencies)</AdditionalDependencies>
+        </Link>
+    </ItemDefinitionGroup>
+    <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+        <ClCompile>
+            <WarningLevel>Level3</WarningLevel>
+            <FunctionLevelLinking>true</FunctionLevelLinking>
+            <IntrinsicFunctions>true</IntrinsicFunctions>
+            <SDLCheck>true</SDLCheck>
+            <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+            <ConformanceMode>true</ConformanceMode>
+            <LanguageStandard>stdcpp20</LanguageStandard>
+            <PrecompiledHeader>NotUsing</PrecompiledHeader>
+            <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+            <AdditionalIncludeDirectories>$(SolutionDir)..\src;$(SolutionDir)..\src\Game1;..\..\res\SDL\SDL2\SDL2\include;..\..\res\SDL\SDL2_image\SDL2_image\include;..\..\res\SDL\SDL2_mixer\SDL2_mixer\include;..\..\res\SDL\SDL2_ttf\include;$(SolutionDir)..\src\MyMotor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+        </ClCompile>
+        <Link>
+            <SubSystem>Windows</SubSystem>
+            <EnableCOMDATFolding>true</EnableCOMDATFolding>
+            <OptimizeReferences>true</OptimizeReferences>
+            <GenerateDebugInformation>true</GenerateDebugInformation>
+            <AdditionalLibraryDirectories>..\..\res\SDL\SDL2\SDL2\lib\x64;..\..\res\SDL\SDL2_image\SDL2_image\lib\x64;..\..\res\SDL\SDL2_mixer\SDL2_mixer\lib\x64;..\..\res\SDL\SDL2_ttf\lib\x64;$(SolutionDir)MyMotor\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+            <AdditionalDependencies>SDL2main.lib;SDL2_image.lib;SDL2.lib;SDL2_mixer.lib;SDL2_ttf.lib;MyMotor.lib;%(AdditionalDependencies)</AdditionalDependencies>
+        </Link>
+    </ItemDefinitionGroup>
+    <ItemGroup>
+        <ClInclude Include="$(SolutionDir)..\src\Game1\Game1Scene.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game1\GameOverScene.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game1\Ground.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game1\LevelManager.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game1\main.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game1\Obstacle.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game1\Player.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game1\PlayerScene.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game1\Point.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game1\StaticObject.h" />
+    </ItemGroup>
+    <ItemGroup>
+        <ClCompile Include="$(SolutionDir)..\src\Game1\Game1Scene.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game1\GameOverScene.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game1\Ground.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game1\LevelManager.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game1\main.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game1\Obstacle.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game1\Player.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game1\PlayerScene.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game1\Point.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game1\StaticObject.cpp" />
+    </ItemGroup>
+    <ItemGroup>
+    </ItemGroup>
+    <ItemGroup>
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="$(SolutionDir)\MyMotor\MyMotor.vcxproj">
+            <Project>{7FBC32DC-00F0-47CA-69A7-43BC4DA921CF}</Project>
+        </ProjectReference>
+    </ItemGroup>
+    <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+    <ImportGroup Label="ExtensionTargets">
+    </ImportGroup>
 </Project>
