@@ -361,3 +361,7 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Garder les bibliothèques SDL (dossiers lib/x64 et lib/x86)
+!res/**/x64/
+!res/**/x86/
