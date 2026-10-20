@@ -11,4 +11,4 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: FlappyMask
-          path: ide/Game1/x64/Release/Game1.exe
+          path: ide/Game1/x64/Release/FlappyMask.exe
