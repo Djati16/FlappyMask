@@ -22,10 +22,22 @@
         <ClInclude Include="$(SolutionDir)..\src\MyMotor\AllColliders.h">
             <Filter>Header Files</Filter>
         </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\MyMotor\BackGround.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\MyMotor\BackGroundManager.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\MyMotor\Camera.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
         <ClInclude Include="$(SolutionDir)..\src\MyMotor\CircleCollider.h">
             <Filter>Header Files</Filter>
         </ClInclude>
         <ClInclude Include="$(SolutionDir)..\src\MyMotor\CollidableEntity.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\MyMotor\Collider.h">
             <Filter>Header Files</Filter>
         </ClInclude>
         <ClInclude Include="$(SolutionDir)..\src\MyMotor\GameManager.h">
@@ -46,15 +58,30 @@
         <ClInclude Include="$(SolutionDir)..\src\MyMotor\Timer.h">
             <Filter>Header Files</Filter>
         </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\MyMotor\UI.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
     </ItemGroup>
     <ItemGroup>
         <ClCompile Include="$(SolutionDir)..\src\MyMotor\AllColliders.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\MyMotor\BackGround.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\MyMotor\BackGroundManager.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\MyMotor\Camera.cpp">
             <Filter>Source Files</Filter>
         </ClCompile>
         <ClCompile Include="$(SolutionDir)..\src\MyMotor\CircleCollider.cpp">
             <Filter>Source Files</Filter>
         </ClCompile>
         <ClCompile Include="$(SolutionDir)..\src\MyMotor\CollidableEntity.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\MyMotor\Collider.cpp">
             <Filter>Source Files</Filter>
         </ClCompile>
         <ClCompile Include="$(SolutionDir)..\src\MyMotor\GameManager.cpp">
@@ -73,6 +100,9 @@
             <Filter>Source Files</Filter>
         </ClCompile>
         <ClCompile Include="$(SolutionDir)..\src\MyMotor\Timer.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\MyMotor\UI.cpp">
             <Filter>Source Files</Filter>
         </ClCompile>
     </ItemGroup>

@@ -94,18 +94,18 @@
         <ClCompile>
             <WarningLevel>Level3</WarningLevel>
             <SDLCheck>true</SDLCheck>
-            <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+            <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
             <ConformanceMode>true</ConformanceMode>
             <LanguageStandard>stdcpp20</LanguageStandard>
             <PrecompiledHeader>NotUsing</PrecompiledHeader>
             <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-            <AdditionalIncludeDirectories>$(SolutionDir)..\src;$(SolutionDir)..\src\Game1;C:\Users\charl\Downloads\SDL\SDL2\SDL2\include;C:\Users\charl\Downloads\SDL\SDL2_image\SDL2_image\include;C:\Users\charl\Downloads\SDL\SDL2_mixer\SDL2_mixer\include;$(SolutionDir)..\src\MyMotor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+            <AdditionalIncludeDirectories>$(SolutionDir)..\src;$(SolutionDir)..\src\Game1;..\..\res\SDL\SDL2\SDL2\include;..\..\res\SDL\SDL2_image\SDL2_image\include;..\..\res\SDL\SDL2_mixer\SDL2_mixer\include;..\..\res\SDL\SDL2_ttf\include;$(SolutionDir)..\src\MyMotor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
         </ClCompile>
         <Link>
-            <SubSystem>Console</SubSystem>
+            <SubSystem>Windows</SubSystem>
             <GenerateDebugInformation>true</GenerateDebugInformation>
-            <AdditionalLibraryDirectories>C:\Users\charl\Downloads\SDL\SDL2\SDL2\lib\x64;C:\Users\charl\Downloads\SDL\SDL2_image\SDL2_image\lib\x64;C:\Users\charl\Downloads\SDL\SDL2_mixer\SDL2_mixer\lib\x64;$(SolutionDir)MyMotor\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-            <AdditionalDependencies>SDL2main.lib;SDL2_image.lib;SDL2.lib;SDL2_mixer.lib;MyMotor.lib;%(AdditionalDependencies)</AdditionalDependencies>
+            <AdditionalLibraryDirectories>..\..\res\SDL\SDL2\SDL2\lib\x64;..\..\res\SDL\SDL2_image\SDL2_image\lib\x64;..\..\res\SDL\SDL2_mixer\SDL2_mixer\lib\x64;..\..\res\SDL\SDL2_ttf\lib\x64;$(SolutionDir)MyMotor\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+            <AdditionalDependencies>SDL2main.lib;SDL2_image.lib;SDL2.lib;SDL2_mixer.lib;SDL2_ttf.lib;MyMotor.lib;%(AdditionalDependencies)</AdditionalDependencies>
         </Link>
     </ItemDefinitionGroup>
     <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -114,38 +114,38 @@
             <FunctionLevelLinking>true</FunctionLevelLinking>
             <IntrinsicFunctions>true</IntrinsicFunctions>
             <SDLCheck>true</SDLCheck>
-            <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+            <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
             <ConformanceMode>true</ConformanceMode>
             <LanguageStandard>stdcpp20</LanguageStandard>
             <PrecompiledHeader>NotUsing</PrecompiledHeader>
             <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-            <AdditionalIncludeDirectories>$(SolutionDir)..\src;$(SolutionDir)..\src\Game1;C:\Users\charl\Downloads\SDL\SDL2\SDL2\include;C:\Users\charl\Downloads\SDL\SDL2_image\SDL2_image\include;C:\Users\charl\Downloads\SDL\SDL2_mixer\SDL2_mixer\include;$(SolutionDir)..\src\MyMotor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+            <AdditionalIncludeDirectories>$(SolutionDir)..\src;$(SolutionDir)..\src\Game1;..\..\res\SDL\SDL2\SDL2\include;..\..\res\SDL\SDL2_image\SDL2_image\include;..\..\res\SDL\SDL2_mixer\SDL2_mixer\include;..\..\res\SDL\SDL2_ttf\include;$(SolutionDir)..\src\MyMotor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
         </ClCompile>
         <Link>
-            <SubSystem>Console</SubSystem>
+            <SubSystem>Windows</SubSystem>
             <EnableCOMDATFolding>true</EnableCOMDATFolding>
             <OptimizeReferences>true</OptimizeReferences>
             <GenerateDebugInformation>true</GenerateDebugInformation>
-            <AdditionalLibraryDirectories>C:\Users\charl\Downloads\SDL\SDL2\SDL2\lib\x64;C:\Users\charl\Downloads\SDL\SDL2_image\SDL2_image\lib\x64;C:\Users\charl\Downloads\SDL\SDL2_mixer\SDL2_mixer\lib\x64;$(SolutionDir)MyMotor\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-            <AdditionalDependencies>SDL2main.lib;SDL2_image.lib;SDL2.lib;SDL2_mixer.lib;MyMotor.lib;%(AdditionalDependencies)</AdditionalDependencies>
+            <AdditionalLibraryDirectories>..\..\res\SDL\SDL2\SDL2\lib\x64;..\..\res\SDL\SDL2_image\SDL2_image\lib\x64;..\..\res\SDL\SDL2_mixer\SDL2_mixer\lib\x64;..\..\res\SDL\SDL2_ttf\lib\x64;$(SolutionDir)MyMotor\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+            <AdditionalDependencies>SDL2main.lib;SDL2_image.lib;SDL2.lib;SDL2_mixer.lib;SDL2_ttf.lib;MyMotor.lib;%(AdditionalDependencies)</AdditionalDependencies>
         </Link>
     </ItemDefinitionGroup>
     <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
         <ClCompile>
             <WarningLevel>Level3</WarningLevel>
             <SDLCheck>true</SDLCheck>
-            <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+            <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
             <ConformanceMode>true</ConformanceMode>
             <LanguageStandard>stdcpp20</LanguageStandard>
             <PrecompiledHeader>NotUsing</PrecompiledHeader>
             <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-            <AdditionalIncludeDirectories>$(SolutionDir)..\src;$(SolutionDir)..\src\Game1;C:\Users\charl\Downloads\SDL\SDL2\SDL2\include;C:\Users\charl\Downloads\SDL\SDL2_image\SDL2_image\include;C:\Users\charl\Downloads\SDL\SDL2_mixer\SDL2_mixer\include;$(SolutionDir)..\src\MyMotor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+            <AdditionalIncludeDirectories>$(SolutionDir)..\src;$(SolutionDir)..\src\Game1;..\..\res\SDL\SDL2\SDL2\include;..\..\res\SDL\SDL2_image\SDL2_image\include;..\..\res\SDL\SDL2_mixer\SDL2_mixer\include;..\..\res\SDL\SDL2_ttf\include;$(SolutionDir)..\src\MyMotor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
         </ClCompile>
         <Link>
-            <SubSystem>Console</SubSystem>
+            <SubSystem>Windows</SubSystem>
             <GenerateDebugInformation>true</GenerateDebugInformation>
-            <AdditionalLibraryDirectories>C:\Users\charl\Downloads\SDL\SDL2\SDL2\lib\x64;C:\Users\charl\Downloads\SDL\SDL2_image\SDL2_image\lib\x64;C:\Users\charl\Downloads\SDL\SDL2_mixer\SDL2_mixer\lib\x64;$(SolutionDir)MyMotor\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-            <AdditionalDependencies>SDL2main.lib;SDL2_image.lib;SDL2.lib;SDL2_mixer.lib;MyMotor.lib;%(AdditionalDependencies)</AdditionalDependencies>
+            <AdditionalLibraryDirectories>..\..\res\SDL\SDL2\SDL2\lib\x64;..\..\res\SDL\SDL2_image\SDL2_image\lib\x64;..\..\res\SDL\SDL2_mixer\SDL2_mixer\lib\x64;..\..\res\SDL\SDL2_ttf\lib\x64;$(SolutionDir)MyMotor\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+            <AdditionalDependencies>SDL2main.lib;SDL2_image.lib;SDL2.lib;SDL2_mixer.lib;SDL2_ttf.lib;MyMotor.lib;%(AdditionalDependencies)</AdditionalDependencies>
         </Link>
     </ItemDefinitionGroup>
     <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -154,34 +154,44 @@
             <FunctionLevelLinking>true</FunctionLevelLinking>
             <IntrinsicFunctions>true</IntrinsicFunctions>
             <SDLCheck>true</SDLCheck>
-            <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+            <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
             <ConformanceMode>true</ConformanceMode>
             <LanguageStandard>stdcpp20</LanguageStandard>
             <PrecompiledHeader>NotUsing</PrecompiledHeader>
             <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-            <AdditionalIncludeDirectories>$(SolutionDir)..\src;$(SolutionDir)..\src\Game1;C:\Users\charl\Downloads\SDL\SDL2\SDL2\include;C:\Users\charl\Downloads\SDL\SDL2_image\SDL2_image\include;C:\Users\charl\Downloads\SDL\SDL2_mixer\SDL2_mixer\include;$(SolutionDir)..\src\MyMotor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+            <AdditionalIncludeDirectories>$(SolutionDir)..\src;$(SolutionDir)..\src\Game1;..\..\res\SDL\SDL2\SDL2\include;..\..\res\SDL\SDL2_image\SDL2_image\include;..\..\res\SDL\SDL2_mixer\SDL2_mixer\include;..\..\res\SDL\SDL2_ttf\include;$(SolutionDir)..\src\MyMotor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
         </ClCompile>
         <Link>
-            <SubSystem>Console</SubSystem>
+            <SubSystem>Windows</SubSystem>
             <EnableCOMDATFolding>true</EnableCOMDATFolding>
             <OptimizeReferences>true</OptimizeReferences>
             <GenerateDebugInformation>true</GenerateDebugInformation>
-            <AdditionalLibraryDirectories>C:\Users\charl\Downloads\SDL\SDL2\SDL2\lib\x64;C:\Users\charl\Downloads\SDL\SDL2_image\SDL2_image\lib\x64;C:\Users\charl\Downloads\SDL\SDL2_mixer\SDL2_mixer\lib\x64;$(SolutionDir)MyMotor\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-            <AdditionalDependencies>SDL2main.lib;SDL2_image.lib;SDL2.lib;SDL2_mixer.lib;MyMotor.lib;%(AdditionalDependencies)</AdditionalDependencies>
+            <AdditionalLibraryDirectories>..\..\res\SDL\SDL2\SDL2\lib\x64;..\..\res\SDL\SDL2_image\SDL2_image\lib\x64;..\..\res\SDL\SDL2_mixer\SDL2_mixer\lib\x64;..\..\res\SDL\SDL2_ttf\lib\x64;$(SolutionDir)MyMotor\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+            <AdditionalDependencies>SDL2main.lib;SDL2_image.lib;SDL2.lib;SDL2_mixer.lib;SDL2_ttf.lib;MyMotor.lib;%(AdditionalDependencies)</AdditionalDependencies>
         </Link>
     </ItemDefinitionGroup>
     <ItemGroup>
+        <ClInclude Include="$(SolutionDir)..\src\Game1\Game1Scene.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game1\GameOverScene.h" />
         <ClInclude Include="$(SolutionDir)..\src\Game1\Ground.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game1\LevelManager.h" />
         <ClInclude Include="$(SolutionDir)..\src\Game1\main.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game1\Obstacle.h" />
         <ClInclude Include="$(SolutionDir)..\src\Game1\Player.h" />
         <ClInclude Include="$(SolutionDir)..\src\Game1\PlayerScene.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game1\Point.h" />
         <ClInclude Include="$(SolutionDir)..\src\Game1\StaticObject.h" />
     </ItemGroup>
     <ItemGroup>
+        <ClCompile Include="$(SolutionDir)..\src\Game1\Game1Scene.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game1\GameOverScene.cpp" />
         <ClCompile Include="$(SolutionDir)..\src\Game1\Ground.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game1\LevelManager.cpp" />
         <ClCompile Include="$(SolutionDir)..\src\Game1\main.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game1\Obstacle.cpp" />
         <ClCompile Include="$(SolutionDir)..\src\Game1\Player.cpp" />
         <ClCompile Include="$(SolutionDir)..\src\Game1\PlayerScene.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game1\Point.cpp" />
         <ClCompile Include="$(SolutionDir)..\src\Game1\StaticObject.cpp" />
     </ItemGroup>
     <ItemGroup>

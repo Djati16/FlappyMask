@@ -99,13 +99,13 @@
             <LanguageStandard>stdcpp20</LanguageStandard>
             <PrecompiledHeader>NotUsing</PrecompiledHeader>
             <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-            <AdditionalIncludeDirectories>$(SolutionDir)..\src;$(SolutionDir)..\src\MyMotor;C:\Users\charl\Downloads\SDL\SDL2\SDL2\include;C:\Users\charl\Downloads\SDL\SDL2_image\SDL2_image\include;C:\Users\charl\Downloads\SDL\SDL2_mixer\SDL2_mixer\include;$(SolutionDir)..\src\MyLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+            <AdditionalIncludeDirectories>$(SolutionDir)..\src;$(SolutionDir)..\src\MyMotor;..\..\res\SDL\SDL2\SDL2\include;..\..\res\SDL\SDL2_image\SDL2_image\include;..\..\res\SDL\SDL2_mixer\SDL2_mixer\include;..\..\res\SDL\SDL2_ttf\include;$(SolutionDir)..\src\MyLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
         </ClCompile>
         <Link>
             <SubSystem>Console</SubSystem>
             <GenerateDebugInformation>true</GenerateDebugInformation>
-            <AdditionalLibraryDirectories>C:\Users\charl\Downloads\SDL\SDL2\SDL2\lib\x64;C:\Users\charl\Downloads\SDL\SDL2_image\SDL2_image\lib\x64;C:\Users\charl\Downloads\SDL\SDL2_mixer\SDL2_mixer\lib\x64;$(SolutionDir)MyLib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-            <AdditionalDependencies>SDL2main.lib;SDL2_image.lib;SDL2.lib;SDL2_mixer.lib;MyLib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+            <AdditionalLibraryDirectories>..\..\res\SDL\SDL2\SDL2\lib\x64;..\..\res\SDL\SDL2_image\SDL2_image\lib\x64;..\..\res\SDL\SDL2_mixer\SDL2_mixer\lib\x64;..\..\res\SDL\SDL2_ttf\lib\x64;$(SolutionDir)MyLib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+            <AdditionalDependencies>SDL2main.lib;SDL2_image.lib;SDL2.lib;SDL2_mixer.lib;SDL2_ttf.lib;MyLib.lib;%(AdditionalDependencies)</AdditionalDependencies>
         </Link>
     </ItemDefinitionGroup>
     <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -119,15 +119,15 @@
             <LanguageStandard>stdcpp20</LanguageStandard>
             <PrecompiledHeader>NotUsing</PrecompiledHeader>
             <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-            <AdditionalIncludeDirectories>$(SolutionDir)..\src;$(SolutionDir)..\src\MyMotor;C:\Users\charl\Downloads\SDL\SDL2\SDL2\include;C:\Users\charl\Downloads\SDL\SDL2_image\SDL2_image\include;C:\Users\charl\Downloads\SDL\SDL2_mixer\SDL2_mixer\include;$(SolutionDir)..\src\MyLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+            <AdditionalIncludeDirectories>$(SolutionDir)..\src;$(SolutionDir)..\src\MyMotor;..\..\res\SDL\SDL2\SDL2\include;..\..\res\SDL\SDL2_image\SDL2_image\include;..\..\res\SDL\SDL2_mixer\SDL2_mixer\include;..\..\res\SDL\SDL2_ttf\include;$(SolutionDir)..\src\MyLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
         </ClCompile>
         <Link>
             <SubSystem>Console</SubSystem>
             <EnableCOMDATFolding>true</EnableCOMDATFolding>
             <OptimizeReferences>true</OptimizeReferences>
             <GenerateDebugInformation>true</GenerateDebugInformation>
-            <AdditionalLibraryDirectories>C:\Users\charl\Downloads\SDL\SDL2\SDL2\lib\x64;C:\Users\charl\Downloads\SDL\SDL2_image\SDL2_image\lib\x64;C:\Users\charl\Downloads\SDL\SDL2_mixer\SDL2_mixer\lib\x64;$(SolutionDir)MyLib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-            <AdditionalDependencies>SDL2main.lib;SDL2_image.lib;SDL2.lib;SDL2_mixer.lib;MyLib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+            <AdditionalLibraryDirectories>..\..\res\SDL\SDL2\SDL2\lib\x64;..\..\res\SDL\SDL2_image\SDL2_image\lib\x64;..\..\res\SDL\SDL2_mixer\SDL2_mixer\lib\x64;..\..\res\SDL\SDL2_ttf\lib\x64;$(SolutionDir)MyLib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+            <AdditionalDependencies>SDL2main.lib;SDL2_image.lib;SDL2.lib;SDL2_mixer.lib;SDL2_ttf.lib;MyLib.lib;%(AdditionalDependencies)</AdditionalDependencies>
         </Link>
     </ItemDefinitionGroup>
     <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -139,13 +139,13 @@
             <LanguageStandard>stdcpp20</LanguageStandard>
             <PrecompiledHeader>NotUsing</PrecompiledHeader>
             <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-            <AdditionalIncludeDirectories>$(SolutionDir)..\src;$(SolutionDir)..\src\MyMotor;C:\Users\charl\Downloads\SDL\SDL2\SDL2\include;C:\Users\charl\Downloads\SDL\SDL2_image\SDL2_image\include;C:\Users\charl\Downloads\SDL\SDL2_mixer\SDL2_mixer\include;$(SolutionDir)..\src\MyLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+            <AdditionalIncludeDirectories>$(SolutionDir)..\src;$(SolutionDir)..\src\MyMotor;..\..\res\SDL\SDL2\SDL2\include;..\..\res\SDL\SDL2_image\SDL2_image\include;..\..\res\SDL\SDL2_mixer\SDL2_mixer\include;..\..\res\SDL\SDL2_ttf\include;$(SolutionDir)..\src\MyLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
         </ClCompile>
         <Link>
             <SubSystem>Console</SubSystem>
             <GenerateDebugInformation>true</GenerateDebugInformation>
-            <AdditionalLibraryDirectories>C:\Users\charl\Downloads\SDL\SDL2\SDL2\lib\x64;C:\Users\charl\Downloads\SDL\SDL2_image\SDL2_image\lib\x64;C:\Users\charl\Downloads\SDL\SDL2_mixer\SDL2_mixer\lib\x64;$(SolutionDir)MyLib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-            <AdditionalDependencies>SDL2main.lib;SDL2_image.lib;SDL2.lib;SDL2_mixer.lib;MyLib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+            <AdditionalLibraryDirectories>..\..\res\SDL\SDL2\SDL2\lib\x64;..\..\res\SDL\SDL2_image\SDL2_image\lib\x64;..\..\res\SDL\SDL2_mixer\SDL2_mixer\lib\x64;..\..\res\SDL\SDL2_ttf\lib\x64;$(SolutionDir)MyLib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+            <AdditionalDependencies>SDL2main.lib;SDL2_image.lib;SDL2.lib;SDL2_mixer.lib;SDL2_ttf.lib;MyLib.lib;%(AdditionalDependencies)</AdditionalDependencies>
         </Link>
     </ItemDefinitionGroup>
     <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -159,38 +159,48 @@
             <LanguageStandard>stdcpp20</LanguageStandard>
             <PrecompiledHeader>NotUsing</PrecompiledHeader>
             <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-            <AdditionalIncludeDirectories>$(SolutionDir)..\src;$(SolutionDir)..\src\MyMotor;C:\Users\charl\Downloads\SDL\SDL2\SDL2\include;C:\Users\charl\Downloads\SDL\SDL2_image\SDL2_image\include;C:\Users\charl\Downloads\SDL\SDL2_mixer\SDL2_mixer\include;$(SolutionDir)..\src\MyLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+            <AdditionalIncludeDirectories>$(SolutionDir)..\src;$(SolutionDir)..\src\MyMotor;..\..\res\SDL\SDL2\SDL2\include;..\..\res\SDL\SDL2_image\SDL2_image\include;..\..\res\SDL\SDL2_mixer\SDL2_mixer\include;..\..\res\SDL\SDL2_ttf\include;$(SolutionDir)..\src\MyLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
         </ClCompile>
         <Link>
             <SubSystem>Console</SubSystem>
             <EnableCOMDATFolding>true</EnableCOMDATFolding>
             <OptimizeReferences>true</OptimizeReferences>
             <GenerateDebugInformation>true</GenerateDebugInformation>
-            <AdditionalLibraryDirectories>C:\Users\charl\Downloads\SDL\SDL2\SDL2\lib\x64;C:\Users\charl\Downloads\SDL\SDL2_image\SDL2_image\lib\x64;C:\Users\charl\Downloads\SDL\SDL2_mixer\SDL2_mixer\lib\x64;$(SolutionDir)MyLib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-            <AdditionalDependencies>SDL2main.lib;SDL2_image.lib;SDL2.lib;SDL2_mixer.lib;MyLib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+            <AdditionalLibraryDirectories>..\..\res\SDL\SDL2\SDL2\lib\x64;..\..\res\SDL\SDL2_image\SDL2_image\lib\x64;..\..\res\SDL\SDL2_mixer\SDL2_mixer\lib\x64;..\..\res\SDL\SDL2_ttf\lib\x64;$(SolutionDir)MyLib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+            <AdditionalDependencies>SDL2main.lib;SDL2_image.lib;SDL2.lib;SDL2_mixer.lib;SDL2_ttf.lib;MyLib.lib;%(AdditionalDependencies)</AdditionalDependencies>
         </Link>
     </ItemDefinitionGroup>
     <ItemGroup>
         <ClInclude Include="$(SolutionDir)..\src\MyMotor\AllColliders.h" />
+        <ClInclude Include="$(SolutionDir)..\src\MyMotor\BackGround.h" />
+        <ClInclude Include="$(SolutionDir)..\src\MyMotor\BackGroundManager.h" />
+        <ClInclude Include="$(SolutionDir)..\src\MyMotor\Camera.h" />
         <ClInclude Include="$(SolutionDir)..\src\MyMotor\CircleCollider.h" />
         <ClInclude Include="$(SolutionDir)..\src\MyMotor\CollidableEntity.h" />
+        <ClInclude Include="$(SolutionDir)..\src\MyMotor\Collider.h" />
         <ClInclude Include="$(SolutionDir)..\src\MyMotor\GameManager.h" />
         <ClInclude Include="$(SolutionDir)..\src\MyMotor\main.h" />
         <ClInclude Include="$(SolutionDir)..\src\MyMotor\RectCollider.h" />
         <ClInclude Include="$(SolutionDir)..\src\MyMotor\Scene.h" />
         <ClInclude Include="$(SolutionDir)..\src\MyMotor\SceneManager.h" />
         <ClInclude Include="$(SolutionDir)..\src\MyMotor\Timer.h" />
+        <ClInclude Include="$(SolutionDir)..\src\MyMotor\UI.h" />
     </ItemGroup>
     <ItemGroup>
         <ClCompile Include="$(SolutionDir)..\src\MyMotor\AllColliders.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\MyMotor\BackGround.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\MyMotor\BackGroundManager.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\MyMotor\Camera.cpp" />
         <ClCompile Include="$(SolutionDir)..\src\MyMotor\CircleCollider.cpp" />
         <ClCompile Include="$(SolutionDir)..\src\MyMotor\CollidableEntity.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\MyMotor\Collider.cpp" />
         <ClCompile Include="$(SolutionDir)..\src\MyMotor\GameManager.cpp" />
         <ClCompile Include="$(SolutionDir)..\src\MyMotor\main.cpp" />
         <ClCompile Include="$(SolutionDir)..\src\MyMotor\RectCollider.cpp" />
         <ClCompile Include="$(SolutionDir)..\src\MyMotor\Scene.cpp" />
         <ClCompile Include="$(SolutionDir)..\src\MyMotor\SceneManager.cpp" />
         <ClCompile Include="$(SolutionDir)..\src\MyMotor\Timer.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\MyMotor\UI.cpp" />
     </ItemGroup>
     <ItemGroup>
     </ItemGroup>
